@@ -18,11 +18,11 @@ public class PersonagemGame {
         this.nome = nome;
     }
 
-    public void tomarDano(int quantidadeDano) {
+    public void tomarDano(int quantidadeDeDano) {
         this.saudeAtual = Math.max(this.saudeAtual - quantidadeDano, 0);
     }
 
-    public void receberCura(int quantidadeCura) {
+    public void receberCura(int quantidadeDeCura) {
         this.saudeAtual = Math.min(this.saudeAtual + quantidadeCura, 100);
     }
 }
