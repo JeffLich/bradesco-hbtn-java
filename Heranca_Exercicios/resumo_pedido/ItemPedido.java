@@ -25,7 +25,7 @@ public class ItemPedido {
         return String.format("Tipo: %s  Titulo: %s  " +
                 "Preco: %.2f  " +
                 "Quant: %d  " +
-                "Total: %.2f  ", this.getProduto().tipo(), this.getProduto().getTitulo(),
+                "Total: %.2f", this.getProduto().tipo(), this.getProduto().getTitulo(),
                 this.getProduto().obterPrecoLiquido(), this.getQuantidade(),  this.getProduto().obterPrecoLiquido() * this.getQuantidade());
     }
 }
