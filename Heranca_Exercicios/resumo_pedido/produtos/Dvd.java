@@ -20,7 +20,7 @@ public class Dvd extends Produto {
 
     @Override
     public String tipo(){
-        return "DVD";
+        return "Dvd";
     }
 
     public String getDiretor() {
