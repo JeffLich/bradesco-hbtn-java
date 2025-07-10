@@ -22,10 +22,10 @@ public class ItemPedido {
 
 
 
-        return String.format("Tipo: " + this.getProduto().tipo() + " Titulo: " + this.getProduto().getTitulo() +
-                " Preco: %.2f " +
-                " Quant: " + this.getQuantidade() +
-                " Total: %.2f ",
-                this.getProduto().obterPrecoLiquido(), this.getProduto().obterPrecoLiquido() * this.getQuantidade());
+        return String.format("Tipo: %s  Titulo: %s  " +
+                "Preco: %.2f  " +
+                "Quant: %d  " +
+                "Total: %.2f  ", this.getProduto().tipo(), this.getProduto().getTitulo(),
+                this.getProduto().obterPrecoLiquido(), this.getQuantidade(),  this.getProduto().obterPrecoLiquido() * this.getQuantidade());
     }
 }
